@@ -1,0 +1,23 @@
+{
+	"name": "gender",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "olympicsrc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "EntriesGender.csv",
+				"container": "my-olympic-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
